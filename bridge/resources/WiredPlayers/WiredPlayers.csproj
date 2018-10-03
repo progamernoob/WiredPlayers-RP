@@ -11,8 +11,13 @@
     <EmbeddedResource Remove="internationalization\**" />
     <None Remove="internationalization\**" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="gtanetwork.api" Version="0.3.5" />
-    <PackageReference Include="MySql.Data" Version="8.0.11" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="gtanetwork.api" Version="0.3.5" />
+		<PackageReference Include="MySql.Data" Version="8.0.12" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Text.Encoding.CodePages">
+			<HintPath>..\..\runtime\runtimes\win\lib\netstandard1.3\System.Text.Encoding.CodePages.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>
